@@ -21,9 +21,7 @@ import java.util.List;
 @Slf4j
 public class MerchantSettlementTask {
 
-    private final ProductRepository productRepository;
     private final MerchantRepository merchantRepository;
-    private final TransactionLogRepository transactionLogRepository;
     private final OrderService orderService;
 
     @Scheduled(cron = "0 0 23 * * ?")
